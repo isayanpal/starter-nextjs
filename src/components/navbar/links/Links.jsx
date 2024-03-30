@@ -25,8 +25,8 @@ const Links = () => {
     },
   ];
 
-  const session = true;
-  const isAdmin = true;
+  const session = false;
+  const isAdmin = false;
 
   return (
     <div className={styles.container}>
