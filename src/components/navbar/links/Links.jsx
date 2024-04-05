@@ -1,5 +1,6 @@
 "use client";
 
+import "boxicons";
 import React, { useState } from "react";
 import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
@@ -43,12 +44,9 @@ const Links = () => {
           <NavLink item={{ title: "Login", path: "/login" }} />
         )}
       </div>
-      <button
-        className={styles.menubtn}
-        onClick={() => setOpen((prev) => !prev)}
-      >
-        menu
-      </button>
+      <div className={styles.menubtn} onClick={() => setOpen((prev) => !prev)}>
+        <box-icon name="menu" color="#ffffff"></box-icon>
+      </div>
       {open && (
         <div className={styles.mobileLinks}>
           {links.map((link) => (
